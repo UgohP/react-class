@@ -1,18 +1,13 @@
 import ComponentA from "./ComponentA";
+import Movie from "./Movie";
 import Movies from "./Movies";
+import Name from "./Name";
 import Students from "./Students";
 
 const App = () => {
   return (
     <>
-      <ComponentA />
-      {/* <div>Hello Martins</div>
-      <Students name="David" />
-      <Students name="Caleb" />
-      <Students name="Martins" />
-      <Students name="Praise" />
-      <Movies title="The amazing spiderman" />
-      <Movies title="Iron Man 2" /> */}
+      <Movie />
     </>
   );
 };
