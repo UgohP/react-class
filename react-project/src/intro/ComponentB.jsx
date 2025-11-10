@@ -1,4 +1,4 @@
-import ComponentC from "./ComponentC";
+import ComponentC from "../ComponentC";
 
 const ComponentB = () => {
   return (

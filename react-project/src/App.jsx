@@ -1,14 +1,16 @@
-import ComponentA from "./ComponentA";
-import Movie from "./Movie";
-import Movies from "./Movies";
-import Name from "./Name";
-import Students from "./Students";
-
 const App = () => {
   return (
-    <>
-      <Movie />
-    </>
+    <div className="pattern">
+      <div className="wrapper">
+        <header>
+          <img src="./hero.png" alt="Hero Image" />
+          <h1>
+            Find <span className="text-gradient">Movies</span> You'll enjoy with
+            Without Stress
+          </h1>
+        </header>
+      </div>
+    </div>
   );
 };
 
