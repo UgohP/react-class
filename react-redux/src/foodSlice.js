@@ -1,7 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  foods: [],
+  foods: [
+    { id: 1, name: "Rice" },
+    { id: 2, name: "Beans" },
+  ],
 };
 
 const foodSlice = createSlice({
@@ -9,7 +12,11 @@ const foodSlice = createSlice({
   initialState,
   reducers: {
     addFood: (state, action) => {
-      state.foods.push(action.payload);
+      const newFood = {
+        id: state.foods[state.foods.length - 1] + 1,
+        name: action.payload,
+      };
+      state.foods.push(newFood);
     },
     removeFood: (state, action) => {},
   },
