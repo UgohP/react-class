@@ -18,7 +18,9 @@ const foodSlice = createSlice({
       };
       state.foods.push(newFood);
     },
-    removeFood: (state, action) => {},
+    removeFood: (state, action) => {
+      state.foods = state.foods.filter((food) => food.id !== action.payload);
+    },
   },
 });
 
